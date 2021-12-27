@@ -1,0 +1,297 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#ribbon{
+    width:100%;
+    height:60px;
+    background:white;
+    text-align: center;
+    font-size:30px;
+    color:#0c5397;
+    font-weight: bold;
+}
+
+#ribbon > a{
+    border:2px solid black;
+    padding:1%;
+    background:gray;
+    color:white
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:auto;
+}
+/*------------ Navbar --------------------------*/
+
+.navbar{
+    width: 100%;
+}
+
+.slogo{
+    width:7%;
+    float:right; 
+}
+.slogo a{
+    text-decoration: none;
+}
+.slogo img{
+    width:45px;
+    
+}
+
+.logoImg{
+    height:50px;
+    width:160px
+}
+
+/* ---------------------about section-------------------------------------------- */
+#about{
+    
+   
+    background: url("https://i.ibb.co/tKks7Dx/bglink.jpg") no-repeat center center/cover;
+    width:100%;
+   
+
+}
+
+.abt-control{
+    display:flex;
+}
+
+.abt-img{
+    
+    height:290px;
+    width:300px;
+   
+   
+    margin-top:80px;
+    margin-left:20px;
+}
+
+.abt-img > img{
+    height:inherit;
+    width:100%;
+
+}
+
+.abt-description{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    color: cornsilk;
+    margin-left: 34px;
+   
+    margin-top:80px;
+}
+
+.desContent{
+    line-height: 2;
+    
+}
+/* ---------------------skillsSection -----------------------------*/
+
+#skills{
+    padding-bottom: 30px;
+    background-color: #0c5397;
+}
+.skillImg{
+    text-align: center;
+    margin-top:30px;
+}
+
+.skillImg > img{
+    margin-left: 1%;
+}
+
+/* ------------------------------------contactSection------------------------------------ */
+
+#contact{
+    background-color: #242121;
+    text-align:center;
+    
+}
+.location{
+    width:100%;
+    height:405px;
+    margin-top:1%;
+}
+.contact-control{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 2%;
+ 
+
+}
+.contact-fame{
+    width:40%;
+}
+.contact-fame p{
+    margin: 6px;
+    color:white;
+}
+.contact-form{
+    margin-bottom: 1%;
+    width: 55%;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height:34px;
+    font-size:20px;
+    margin-top:2%;
+    font-family: 'Ubuntu', sans-serif;
+    color:black;
+    padding-left: 2px;
+}
+
+input[type="text"]{
+    margin-top:1%;
+}
+
+.contact-message > textarea{
+    width:100%;
+    font-size: 20px;
+    margin-top:2%;
+    color:black;
+    padding-left: 2px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.button{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 6px;
+    border:0px;
+    cursor:pointer;
+    font-size: 20px;
+    background-color: rgb(31, 115, 224);
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    
+
+}
+
+
+/*----------------------------------------- footer class--------------------------------------- */
+footer{
+    background-color: burlywood;
+    
+    display: flex;
+    
+    justify-content:center;
+}
+.footer-content{
+   font-size:25px;
+   
+}
+/* utilityClass */
+.section-heading{
+    padding-top:1%;
+    margin: 0px;
+    text-align: center;
+    font-size:40px;
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+}
+
+/*--------------------------- media Query----------------------- */
+
+@media only screen and (max-width:800px){
+    .contact-control{
+        flex-direction:column;
+
+    }
+    .contact-fame{
+        width:100%;
+    }
+    .contact-form{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .abt-control{
+        flex-direction: column;
+
+    }
+    .abt-description{
+        margin-left: 20px;
+        margin-top:30px;
+    }
+
+    .hobb-img{
+       
+        
+        flex-wrap:wrap;
+    }
+
+    .hobb-img > img{
+        width:100px;
+    }
+
+    .skillImg > img{
+        width:72px;
+    }
+
+    
+}
+
+@media only screen and (max-width:538px){
+    #navbar{
+        flex-direction: column;
+    }
+
+    .navigation{
+        width:100%;
+        margin: 10px 0px;
+    }
+
+    .navigation ul{
+        margin-left:20px;
+    }
+
+    .slogo{
+        justify-content: flex-start;
+
+       
+    }
+    .slogo img{
+        width:35px;
+    }
+    
+    .abt-img > img{
+        width: 85%;
+    }
+    .section-heading{
+        font-size: 25px;
+    }
+    .footer-content{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .abt-img{
+        width:270px;
+        margin-left: 5px;
+    }
+
+    .navigation ul {
+        font-size:13px;
+    }
+    .footer-content{
+        font-size: 15px;
+    }
+}
